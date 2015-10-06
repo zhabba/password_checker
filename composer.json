@@ -1,0 +1,19 @@
+{
+  "name": "zhabba/password_checker",
+  "description": "Trial test",
+  "license": "MIT",
+  "keywords": [
+    "password_checker",
+    "test"
+  ],
+  "homepage": "https://github.com/zhabba/password_checker",
+  "require": {
+    "mustangostang/spyc": "0.5.*",
+    "monolog/monolog": "1.17.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Main\\": "Main/"
+    }
+  }
+}

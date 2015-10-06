@@ -1,0 +1,28 @@
+rules:
+  - 
+    description: "Password length is minimum 5 characters"
+    regexp: "/.{5,}/"
+    err_message: "Password must be 5 charcters or longer."
+  
+
+  - 
+    description: "At least one number is used in the password"
+    regexp: "/\d+/"
+    err_message: "Password must contain at least one number."
+  
+
+  - 
+      description: "There are no more than 2 repeating characters"
+      regexp: "/^((.)\2?(?!\2))*$/"
+      err_message: "Password contains more than 2 repeated characters."
+    
+
+  - 
+      description: "There is at least one UPPERCASE character OR alternatively one special character."
+      regexp: "/[A-Z]+|[^A-Za-z0-9]+/"
+      err_message: "Password must contain at least one UPPERCASE character OR alternatively one special character."
+
+  #-
+  #    description: "Uncomment and this rule will be applied too."
+  #    regexp: "/.{20,}/"
+  #    err_message: "Just for test"
